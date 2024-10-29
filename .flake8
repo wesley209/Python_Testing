@@ -1,0 +1,18 @@
+[flake8]
+format = html
+htmldir = flake8-report
+# Set the maximum allowed line length to 120 characters
+max-line-length = 120
+
+# Ignore these files and directories
+exclude =
+    .git,
+    _pycache_,
+    migrations,
+    tests/*,
+    docs/*,
+    tenv/*
+
+# You can also ignore specific rules (optional)
+# Example: Ignore E501 (line length) and W503 (line break before binary operator)
+ignore = E501, W503, W504
